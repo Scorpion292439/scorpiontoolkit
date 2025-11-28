@@ -67,7 +67,8 @@ def menu():
 ╚══════════════════════════════════════════════════════════════════════════════╝
 """)
         print(f"{W}1. SMS Bomber")
-        print(f"{W}2. Çıkış")
+        print(f"{W}2. İnsta HİT")
+        print(f"{W}3. Çıkış")
         sec = input(f"{Y} Seçim → {G}").strip()
         if sec == "1":
             try:
@@ -77,6 +78,16 @@ def menu():
                 print(f"{R}Hata: smsbomber.py dosyasını bulamadı. Lütfen aynı klasöre koyun.{W}")
                 time.sleep(2)
         elif sec == "2":
+            try:
+                import instahit
+                instahit.insta_main()  # Varsayım: instahit.py'de insta_main() fonksiyonu var. Değiştirilebilir.
+            except ImportError:
+                print(f"{R}Hata: instahit.py dosyasını bulamadı. Lütfen aynı klasöre koyun.{W}")
+                time.sleep(2)
+            except AttributeError:
+                print(f"{R}Hata: instahit.py'de 'insta_main()' fonksiyonu bulunamadı. Dosyayı kontrol edin.{W}")
+                time.sleep(2)
+        elif sec == "3":
             print(f"{R} Scorpion kayboldu...{W}")
             sys.exit()
         else:
