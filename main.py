@@ -72,20 +72,20 @@ def menu():
         sec = input(f"{Y} Seçim → {G}").strip()
         if sec == "1":
             try:
-                import smsbomber
-                smsbomber.sms_main()
+                import data
+                data.sms_main()
             except ImportError:
-                print(f"{R}Hata: smsbomber.py dosyasını bulamadı. Lütfen aynı klasöre koyun.{W}")
+                print(f"{R}Hata: data.py dosyasını bulamadı. Lütfen aynı klasöre koyun.{W}")
                 time.sleep(2)
         elif sec == "2":
             try:
-                import instahit
-                instahit.insta_main()  # Varsayım: instahit.py'de insta_main() fonksiyonu var. Değiştirilebilir.
+                import data2
+                data2.insta_main()  # Varsayım: data2.py'de insta_main() fonksiyonu var. Değiştirilebilir.
             except ImportError:
-                print(f"{R}Hata: instahit.py dosyasını bulamadı. Lütfen aynı klasöre koyun.{W}")
+                print(f"{R}Hata: data2.py dosyasını bulamadı. Lütfen aynı klasöre koyun.{W}")
                 time.sleep(2)
             except AttributeError:
-                print(f"{R}Hata: instahit.py'de 'insta_main()' fonksiyonu bulunamadı. Dosyayı kontrol edin.{W}")
+                print(f"{R}Hata: data2.py'de 'insta_main()' fonksiyonu bulunamadı. Dosyayı kontrol edin.{W}")
                 time.sleep(2)
         elif sec == "3":
             print(f"{R} Scorpion kayboldu...{W}")
