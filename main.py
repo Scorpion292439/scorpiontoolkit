@@ -130,7 +130,7 @@ def ana_menu():
 {C}   ╔══════════════════════════════════════════════════════════╗
    ║{W}                  SCORPION TOOLKIT v3                     {C}║
    ║{Y}   • Geliştirici : Scorpion292439                         {C}║
-   ║{Y}   • Discord     : scorpion292439                         {C}║
+   ║{Y}   • GitHub      : scorpion292439                         {C}║
    ║{Y}   • Amaç        : Eğitim & Penetrasyon Testi             {C}║
    ║{R}   • Uyarı       : Yasal olmayan kullanım cezai yaptırımdır! {C}║
    ╚══════════════════════════════════════════════════════════╝
